@@ -2,10 +2,10 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'SundayMall',
+    title: 'Redio',
     description: 'Auto-generated docs',
   },
-  host: 'http://localhost:5000',
+  host: 'https://radio-drfi.onrender.com/',
   schemes: ['http'],
   tags: [
     {

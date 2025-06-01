@@ -16,7 +16,7 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
-      console.log("Swagger docs available at http://localhost:5000/radio");
+      console.log("Swagger docs available at https://radio-drfi.onrender.com/api-docs");
 
 });
 
