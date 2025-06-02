@@ -10,7 +10,8 @@ const swaggerFile = require('./swagger-output.json');
 const errorMiddleware = require("./middlewares/error");
 const userRoutes = require("./routes/userRoutes");
 const adminRoutes = require("./routes/adminRoutes");
-const contentRoutes = require("./routes/contentRoutes")
+const contentRoutes = require("./routes/contentRoutes");
+const contactRoutes = require("./routes/contactRoutes")
 
 // Initialize Express App
 app.use(express.json());
@@ -23,7 +24,7 @@ app.use(cors({ origin: "*", credentials: true }));
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", adminRoutes);
 app.use("/api/v1",contentRoutes)
-
+app.use("/api/v1/contacts",contactRoutes)
 // Error Handling
 app.use(errorMiddleware);
 

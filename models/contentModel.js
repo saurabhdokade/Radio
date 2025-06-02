@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 const Categories = ["audio", "video", "images", "story"];
 const Languages = [
-    "English",
-   "Bengali",
+  "English",
+  "Bengali",
   "Bodo",
   "Dogri",
   "Gujarati",
@@ -43,10 +43,10 @@ const contentSchema = new mongoose.Schema({
     },
   ],
   language: {
-  type: [String],
-  enum: Languages,
-  required: true,
-},
+    type: [String],
+    enum: Languages,
+    required: true,
+  },
   createdAt: { type: Date, default: Date.now },
 });
 
